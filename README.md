@@ -7,7 +7,13 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+Localhost:
 Tab 1: node server.js
-
 Tab 2: npm run dev
+
+Docker:
+docker compose down
+docker compose build
+docker compose up
+
 # websocket-server

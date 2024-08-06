@@ -7,6 +7,8 @@ RUN npm install --frozen-lockfile
 
 COPY . .
 
-EXPOSE 3000
+RUN npm run build
 
-CMD ["node", "server.js"]
+EXPOSE 5000
+
+CMD ["npx", "serve", "-s", "dist"]
