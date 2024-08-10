@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import useWebSocket from './hooks/useWebSocket';
 
 const App = () => {
-  const { sendMessage, playerId, messages, gameStatus } = useWebSocket('ws://localhost:8080');
+  // const { sendMessage, playerId, messages, gameStatus } = useWebSocket('ws://localhost:8080');
+	const { sendMessage, playerId, messages, gameStatus } = useWebSocket('ws://websocket-server-zeta.vercel.app');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
